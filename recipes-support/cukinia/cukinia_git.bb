@@ -15,3 +15,5 @@ do_install () {
     install -m 0755 ${S}/cukinia ${D}${bindir}
     install -d ${D}${sysconfdir}/cukinia
 }
+
+inherit allarch
