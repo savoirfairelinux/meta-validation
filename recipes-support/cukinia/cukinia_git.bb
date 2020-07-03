@@ -10,6 +10,8 @@ PV = "master+git${SRCPV}"
 
 S = "${WORKDIR}/git"
 
+RDEPENDS_${PN} += "bash"
+
 do_install () {
     install -d ${D}${bindir}
     install -m 0755 ${S}/cukinia ${D}${bindir}
